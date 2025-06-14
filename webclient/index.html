@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="true" name="HandheldFriendly">
+        <meta content="width" name="MobileOptimized">
+        <meta content="on" http-equiv="cleartype">
+
+        <title>Almacenamiento externo de fotogramas para Hydra</title>
+        <link rel="stylesheet" href="./lib/style.css">
+    </head>
+    <body>
+        <div class="center">
+            <canvas id="soporte"></canvas>
+        </div>
+
+        <br><hr><br>
+        <code>
+            <p><b>Almacenamiento externo de fotogramas para Hydra</b>
+                <br>Interfaz disponible mediante expresiones desde la consola de desarrollador (Ctrl+Shift+I).
+            </p>
+            <p>EXPRESIONES DISPONIBLES:</p>
+            <ul>
+                <li>
+                    <b class="expr">capturar(width:int, height:int, capture_fps:int, video_fps:int, video_name:str, format_frame:str, quality_frame:float)</b>
+                    <br>Ejemplo: <span class="expr">capturar(100, 100, 20, 20, 'video_01', 'jpg', 0.90)</span>
+                    <br>Ejemplo: <span class="expr">capturar(500, 1000, 12, 24, 'video_02', 'png')</span>
+                </li>
+                <li><b class="expr">finalizar(reload:bool)</b>
+                    <br>Ejemplo: <span class="expr">finalizar(true)</span>
+                </li>
+                <li><b class="expr">server(host:str, port:str)</b>
+                    <br>Ejemplo: <span class="expr">server('localhost', '9009')</span>
+                </li>
+                <li>Cualquier función o variable definida por <a href="https://hydra.ojack.xyz/api/">Hydra</a>.
+                    <br>Ejemplo: <span class="expr">speed = 2.5</span>
+                    <br>Ejemplo: <span class="expr">osc(1,2,3).modulate(voronoi(4,5,6)).out()</span>
+            </ul>
+        </code>
+        <script src="./lib/hydra-synth__modificado.js"></script>
+        <script src="./lib/init.js"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+* {
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+}
+
+body { margin: 0; padding: 17px; }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.expr {
+    color: #81b;
+}
