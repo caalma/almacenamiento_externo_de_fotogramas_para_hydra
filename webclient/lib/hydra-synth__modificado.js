@@ -3025,7 +3025,7 @@
 
             this.sandbox.set('width', width);
             this.sandbox.set('height', height);
-            console.log(this.width);
+            //console.log(this.width);
             this.o.forEach(output => {
                 output.resize(width, height);
             });
@@ -3034,8 +3034,7 @@
             });
 
             this.regl._refresh();
-
-            console.log(this.canvas.width);
+            //console.log(this.canvas.width);
         }
 
         canvasToImage(callback) {
