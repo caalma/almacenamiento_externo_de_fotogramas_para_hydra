@@ -13,6 +13,7 @@ Es necesario ejecutar el servidor disponible en `server.py`. Luego abrir el `web
 
 También están disponibles algunos scripts en bash para automatizar ciertos pasos comunes.
 
+![Muestra de uso](./muestra.png)
 
 ## Pendiente
 
